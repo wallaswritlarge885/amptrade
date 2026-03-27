@@ -10,6 +10,14 @@ This is a monorepo containing the following services:
 - amptrade-websocket: The websocket service for real-time data
 | Development | `localhost:8789 to localhost:8795` |
 
+### Quick Start (First‑Time Checklist)
+- Install prerequisites: Node.js (LTS) and Python 3.10+ on Windows; during Python setup, check “Add Python to PATH”
+- Ensure the project folder exists at `G:\GitHub\amptrade`
+- Double‑click `g:\GitHub\amptrade\install-all.bat` and wait for “INSTALLATION COMPLETE”
+- Double‑click `g:\GitHub\amptrade\start-amptrade-dev-servers.bat`, type `1` to start all servers
+- Use the app at `http://localhost:5178` (Firefox opens automatically; you can use any browser)
+- When finished, return to the menu window and press any key to stop all services
+
 ### Getting Started (Windows – Non‑Technical)
 
 Use these steps to install and run AmpTrade locally on a Windows PC.
@@ -63,6 +71,7 @@ pip install -r requirements.txt
 ```
 
 #### Start AmpTrade (Easy Way)
+- First time? Run [install-all.bat](file:///g:/GitHub/amptrade/install-all.bat) first (see Install Dependencies)
 - Double‑click `g:\GitHub\amptrade\start-amptrade-dev-servers.bat`
 - In the menu, type `1` and press Enter to “Start All Servers”
 - What opens:
